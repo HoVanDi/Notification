@@ -1,0 +1,133 @@
+body {
+    background-color: #F6FAFD;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border-radius: 16px;
+    /* margin: 48px 373px 94px; */
+    background-color: #fff;
+    width: 620px;
+    /* display: flex; */
+    font-family: Roboto;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 24px 16px 22px;
+}
+
+.container .header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.container .header .notifications {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.container .header span.notification-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container .header span.notification-number {
+    color: #DDE7EE;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #0A317B;
+    border-radius: 8px;
+    padding: 2px 9px;
+}
+
+.container .header .notification-btn {
+    color: #5E6778;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.container .header .notification-btn:hover {
+    cursor: pointer;
+}
+
+.content .comment {
+    gap: 16px;
+    padding: 16px 0px 18px 16px;
+    display: flex;
+    background-color: #F7FAFD;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.content .comment.comment-read {
+    background-color: #FFF;
+}
+
+
+.content .comment .comment-content {
+    font-size: 14px;
+    line-height: 18.2px;
+}
+
+.comment.comment-read.show-comment {
+    position: relative;
+    padding-bottom: 103px;
+}
+
+.content .comment .comment-time {
+    color: #939DAE;
+}
+
+
+.content .comment .box-comment {
+    color: #5E6778;
+    padding: 16px 17px;
+    border-radius: 4.8px;
+    border: 1px solid #E5EFFA;
+    position: absolute;
+}
+
+.content .comment .comment-time.message {
+    margin-bottom: 7px;
+}
+
+.comment.comment-read.show-picture {
+    position: relative;
+}
+
+img.commented-photo {
+    position: absolute;
+    right: 0px;
+    top: 16px;
+}
+
+.content .comment .comment-content span.comment-name {
+    font-weight: 700;
+    color: #1C202B
+}
+
+.content .comment .comment-content span.interactive-content {
+    font-weight: 400;
+    color: #5E6778;
+}
+
+.content .comment .comment-content span.post-content {
+    font-weight: 700;
+}
+
+.content .comment .comment-content span.notification-icon {
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    background-color: #F65351;
+    border-radius: 10px;
+}
