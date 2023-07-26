@@ -1,138 +1,159 @@
 body {
-  background-color: #f6fafd;
-  margin: 0;
-  height: 130vh;
-  display: flex;
-  align-items: center;
+    background-color: #f6fafd;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .container {
-  border-radius: 16px;
-  background-color: #fff;
-  width: 620px;
-  font-family: Roboto;
-  margin: 0 auto;
+    border-radius: 16px;
+    background-color: #fff;
+    width: 620px;
+    font-family: Roboto;
+    margin: 0 auto;
+    margin: 48px 373px 94px 373px;
 }
 
 .content {
-  padding: 24px 16px 22px;
+    padding: 24px 16px 22px;
 }
 
 .container .header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 23px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
 }
 
 .container .header .notifications {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .container .header span.notification-text {
-  color: #000;
-  font-size: 20px;
-  font-weight: 700;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .container .header span.notification-number {
-  color: #dde7ee;
-  font-size: 18px;
-  font-weight: 400;
-  background-color: #0a317b;
-  border-radius: 8px;
-  padding: 2px 9px;
+    color: #dde7ee;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #0a317b;
+    border-radius: 8px;
+    padding: 2px 9px;
 }
 
 .container .header .notification-btn {
-  color: #5e6778;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 500;
+    color: #5e6778;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .container .header .notification-btn:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .content .comment {
-  gap: 16px;
-  padding: 15px 0px 15px 16px;
-  display: flex;
-  background-color: #f7fafd;
-  margin-bottom: 16px;
-  align-items: center;
+    gap: 16px;
+    padding: 15px 20px 15px 16px;
+    display: flex;
+    background-color: #f7fafd;
+    margin-bottom: 16px;
+    align-items: center;
+    border-radius: 8px;
 }
 
 .content .comment.comment-read {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .content .comment .comment-content {
-  font-size: 14px;
-  line-height: 18.2px;
+    font-size: 14px;
+    line-height: 18.2px;
 }
 
 .comment.comment-read.show-comment {
-  position: relative;
-  padding-bottom: 103px;
+    position: relative;
+    padding-bottom: 103px;
 }
 
 .content .comment .comment-time {
-  color: #939dae;
+    color: #939dae;
 }
 
 .content .comment .box-comment {
-  color: #5e6778;
-  padding: 16px 17px;
-  border-radius: 4.8px;
-  border: 1px solid #e5effa;
-  position: absolute;
+    margin-right: 16px;
+    color: #5e6778;
+    padding: 17px 43px 16px 17px;
+    border-radius: 4.8px;
+    border: 1px solid #e5effa;
+    position: absolute;
 }
 
 .content .comment .comment-time.message {
-  margin-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 img.commented-photo {
-  margin-left: 189px;
+    margin-left: 169px;
 }
 
 .content .comment .comment-content span.comment-name {
-  font-weight: 700;
-  color: #1c202b;
+    font-weight: 700;
+    color: #1c202b;
 }
 
 .content .comment .comment-content span.interactive-content {
-  font-weight: 400;
-  color: #5e6778;
+    font-weight: 400;
+    color: #5e6778;
 }
 
 .content .comment .comment-content span.post-content {
-  font-weight: 700;
+    font-weight: 700;
+    color: #5e6778;
 }
 
 .content .comment .comment-content span.notification-icon {
-  display: inline-flex;
-  width: 8px;
-  height: 8px;
-  background-color: #f65351;
-  border-radius: 10px;
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    background-color: #f65351;
+    border-radius: 10px;
 }
 
-/* Các thông báo chưa đọc có màu nền #0A317B */
-.unread {
-  background-color: #0a317b;
-  color: white;
+.content .comment.read {
+    background-color: #FFF;
 }
-/* Các thông báo đã đọc có màu nền #F7FAFD */
-.read {
-  background-color: #f7fafd;
-}
+
+
+
 @media screen and (max-width: 768px) {
-  img.commented-photo {
-    margin-left: 0;
-  }
+    .container{
+        margin: 0;
+    }
+    img.commented-photo {
+        margin-left: 0;
+    }
+
+    .comment.comment-read.show-picture {
+        padding-right: 0;
+    }
+
+    .content .comment .box-comment {
+        padding: 17px 16px;
+    }
+
+    .comment.comment-read.show-comment {
+        padding-bottom: 129px;
+    }
+
+    .content .comment {
+        align-items: normal;
+    }
+    
 }
