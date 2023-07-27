@@ -59,13 +59,23 @@ body {
 }
 
 .content .comment {
-    gap: 16px;
-    padding: 15px 20px 15px 16px;
+    padding: 16px 18px 16px;
     display: flex;
     background-color: #f7fafd;
     margin-bottom: 16px;
     align-items: center;
     border-radius: 8px;
+}
+
+.image {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+
+.content .comment:hover {
+    cursor: pointer;
 }
 
 .content .comment.comment-read {
@@ -99,8 +109,16 @@ body {
     margin-bottom: 7px;
 }
 
+.show-picture-commented {
+    display: flex;
+}
+
 img.commented-photo {
-    margin-left: 169px;
+    margin-left: 187px;
+}
+
+.comment.comment-read.show-picture {
+    padding-right: 16px;
 }
 
 .content .comment .comment-content span.comment-name {
@@ -133,15 +151,29 @@ img.commented-photo {
 
 
 @media screen and (max-width: 768px) {
-    .container{
+    .container {
         margin: 0;
     }
-    img.commented-photo {
-        margin-left: 0;
+
+    .image{
+        display: block;
+    }
+    
+    .content {
+        padding: 24px 16px 58px;
     }
 
-    .comment.comment-read.show-picture {
-        padding-right: 0;
+    img.commented-photo {
+        margin-left: 10px;
+    }
+
+    .show-picture-commented {
+        display: block;
+    }
+    
+
+    .content .comment {
+        align-items: normal;
     }
 
     .content .comment .box-comment {
@@ -152,8 +184,8 @@ img.commented-photo {
         padding-bottom: 129px;
     }
 
-    .content .comment {
-        align-items: normal;
+    .container .header span.notification-number {
+        font-size: 16px;
+        padding: 3px 9px;
     }
-    
 }
